@@ -31,3 +31,76 @@
         }
     });
 
+
+const slideData = [
+    {
+        title: 'Neuromail',
+        description: 'The revolutionary encryption project merging security and user experience. Users can seamlessly hide files within images, customizing the degree of deformation for optimal security.'
+    },
+    {
+        title: 'Password Manager',
+        description: 'Keep your passwords secure with advanced encryption techniques and an intuitive user interface.'
+    },
+    {
+        title: 'Quantumography',
+        description: 'Explore the cutting edge of quantum-based cryptography for next-generation security.'
+    },
+    {
+        title: 'Password Manager 2',
+        description: 'An enhanced version with additional features for enterprise-level password security.'
+    },
+    {
+        title: 'Textpass',
+        description: 'Encrypt your messages on the fly with zero knowledge encryption algorithms.'
+    },
+    {
+        title: 'VPN',
+        description: 'Secure your connection with the most advanced VPN protocols available.'
+    },
+    {
+        title: 'Neuromail',
+        description: 'The email system that protects your communication with quantum encryption.'
+    }
+];
+
+
+const headingElement = document.getElementById('main-heading');
+const descriptionElement = document.getElementById('main-description');
+
+
+const paginationLines = document.querySelectorAll('.pagination-line');
+
+
+const images = document.querySelectorAll('[data-slide-index]');
+images.forEach(image => {
+    image.addEventListener('click', function() {
+   
+        if (this.classList.contains('large-img')) {
+            return;
+        }
+
+        const index = this.getAttribute('data-slide-index');
+        const slide = slideData[index];
+        
+       
+        headingElement.textContent = slide.title;
+        descriptionElement.textContent = slide.description;
+
+     
+        paginationLines.forEach(line => line.classList.remove('bg-white'));
+        paginationLines[index].classList.add('bg-white');
+
+       
+        images.forEach(img => img.classList.remove('large-img')); 
+        this.classList.add('large-img'); 
+    });
+});
+
+
+window.addEventListener('load', function() {
+    const firstImage = images[0];
+    firstImage.click();
+
+
+    paginationLines[0].classList.add('bg-white');
+});
