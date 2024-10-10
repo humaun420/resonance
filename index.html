@@ -49,39 +49,39 @@
         @keyframes grow-shrink {
             0% {
                 transform: scale(1.5);
-                /* ছোট */
+                /*image small */
                 opacity: 1;
             }
 
             50% {
                 transform: scale(1.7);
-                /* বড় */
+                /* image big */
                 opacity: 1;
             }
 
             100% {
                 transform: scale(1.5);
-                /* আবার ছোট */
+                /* again small */
                 opacity: 1;
             }
         }
 
         .ping-grow-shrink {
             animation: grow-shrink 5s ease-in-out infinite;
-            /* ৫ সেকেন্ডে ছোট থেকে বড় এবং আবার ছোট হবে */
+            /* It will go from small to big and then back to small in 5 seconds */
         }
 
         /* slide   */
-        /* ইমেজের ডিফল্ট সাইজ */
+        /* default size of the image */
         .small-img {
             width: 5rem;
             height: 5rem;
             transition: transform 0.3s ease;
             cursor: pointer;
-            /* ক্লিক করার ইঙ্গিত */
+           
         }
 
-        /* ইমেজ বড় করার স্টাইল */
+        /* style for enlarging the image */
         .large-img {
             width: 7rem;
             height: 7rem;
@@ -94,8 +94,9 @@
 
 <body class="font-inter">
     <section class="bg-cover-custom h-[100vh] relative pb-20">
-        
-        <video autoplay muted loop class="absolute top-1/2 left-1/2 min-w-full h-[100vh] object-cover transform -translate-x-1/2 -translate-y-1/2 z-1 opacity-10">
+
+        <video autoplay muted loop
+            class="absolute top-1/2 left-1/2 min-w-full h-[100vh] object-cover transform -translate-x-1/2 -translate-y-1/2 z-1 opacity-10">
             <source src="video/sectionOneBannerVideo.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -107,7 +108,7 @@
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex md:items-center md:space-x-6">
-                <ul class="flex space-x-8 text-[#5A4FCF]">
+                <ul class="flex space-x-8 text-[#5A4FCF] z-30">
                     <li><a href="#" class="hover:text-gray-900">Product</a></li>
                     <li><a href="#" class="hover:text-gray-900">About</a></li>
                     <li><a href="#" class="hover:text-gray-900">Features</a></li>
@@ -116,13 +117,13 @@
             </nav>
 
             <!-- Desktop Support and Sign-in Links -->
-            <div class="hidden md:flex md:space-x-4 font-semibold">
+            <div class="hidden md:flex md:space-x-4 font-semibold z-30">
                 <a href="#" class="text-[#5A4FCF] hover:text-gray-900">Support</a>
                 <a href="#" class="text-[#5A4FCF] hover:text-gray-900">Sign in</a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-button" class="md:hidden text-gray-600">
+            <button id="menu-button" class="md:hidden text-gray-600 z-30">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -132,7 +133,7 @@
 
         <!-- Mobile Drawer Menu -->
         <nav id="mobile-menu"
-            class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-20 md:hidden">
+            class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
             <div class="relative">
                 <!-- Close Icon and Logo -->
                 <div class="flex justify-between items-center px-4 py-4">
@@ -184,7 +185,7 @@
                 <img src="image/hero-icon/Union.png"
                     class="z-20 w-10 h-10 lg:w-14 lg:h-14 border rounded-2xl p-3 absolute md:left-[550px] md:top-[700px] lg:left-[680px] lg:top-[350px] xl:left-[800px] xl:top-[350px] ping-grow-shrink" />
             </div>
-            <div>
+            <div class="z-30">
                 <p class="text-[#7868E4] font-semibold text-lg uppercase">Privacy is not a crime</p>
                 <h1 class="text-4xl lg:text-4xl xl:text-6xl font-extrabold">Send Your Message <br> Secretly</h1>
                 <p class="text-lg text-[#5B379E] pb-4">
@@ -192,7 +193,7 @@
                     freedom, and tools enriched <br> with internet privacy-supporting features.
                 </p>
             </div>
-            <div class="flex space-x-4">
+            <div class="flex space-x-4 z-10 sm:z-0">
                 <!-- Book Demo Button -->
                 <button class="bg-[#7767e4] text-white py-3 px-3 md:px-6 rounded-lg">Book demo</button>
                 <!-- Start for Free Button with FontAwesome Icon -->
@@ -423,7 +424,6 @@
                 <div class="flex items-center space-x-12 ml-24">
                     <!-- Pagination and Icons Section -->
                     <div class="flex items-center space-x-16">
-                        <!-- Vertical Line Pagination -->
                         <!-- Vertical Line Pagination -->
                         <div class="flex flex-col items-center space-y-3">
                             <!-- Active Step -->
