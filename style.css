@@ -8,22 +8,56 @@
 
 .slider {
   display: flex;
-  transition: transform 0.8s ease-in-out; /* Smooth transition */
+  transition: transform 0.8s ease-in-out;
 }
 
 .slide {
   min-width: 100%;
   box-sizing: border-box;
   position: relative;
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.5s ease-in; /* Fade effect */
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
 }
 
 .slide.active {
-  opacity: 1; /* Show active slide */
+  opacity: 1;
 }
 
 .slide img {
   width: 100%;
   display: block;
+}
+
+/* Overlay Styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 1; 
+  pointer-events: none; 
+  background: rgba(
+    20,
+    0,
+    54,
+    0.3
+  ); 
+}
+
+.overlay-left {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(20, 0, 54, 0.5),
+    transparent
+  );
+}
+
+.overlay-right {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(20, 0, 54, 0.5),
+    transparent
+  );
 }
