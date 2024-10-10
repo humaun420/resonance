@@ -104,3 +104,35 @@ window.addEventListener('load', function() {
 
     paginationLines[0].classList.add('bg-white');
 });
+
+// internt slide 
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active'); // Remove active class from all slides
+  });
+  
+  if (index >= slides.length) {
+    currentIndex = 0;
+  } else if (index < 0) {
+    currentIndex = slides.length - 1;
+  } else {
+    currentIndex = index;
+  }
+
+  slides[currentIndex].classList.add('active'); // Add active class to the current slide
+  const offset = -currentIndex * 100;
+  slider.style.transform = `translateX(${offset}%)`;
+}
+
+// Show the first slide initially
+showSlide(currentIndex);
+
+// Auto slide every 3 seconds
+setInterval(() => {
+  showSlide(currentIndex + 1);
+}, 3000);
+
