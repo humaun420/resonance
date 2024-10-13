@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .slider-container {
   position: relative;
   width: 100%;
@@ -34,30 +37,17 @@
   top: 0;
   bottom: 0;
   width: 100px;
-  z-index: 1; 
-  pointer-events: none; 
-  background: rgba(
-    20,
-    0,
-    54,
-    0.3
-  ); 
+  z-index: 1;
+  pointer-events: none;
+  background: rgba(20, 0, 54, 0.3);
 }
 
 .overlay-left {
   left: 0;
-  background: linear-gradient(
-    to right,
-    rgba(20, 0, 54, 0.5),
-    transparent
-  );
+  background: linear-gradient(to right, rgba(20, 0, 54, 0.5), transparent);
 }
 
 .overlay-right {
   right: 0;
-  background: linear-gradient(
-    to left,
-    rgba(20, 0, 54, 0.5),
-    transparent
-  );
+  background: linear-gradient(to left, rgba(20, 0, 54, 0.5), transparent);
 }
