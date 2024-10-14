@@ -106,22 +106,22 @@
 
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex md:items-center md:space-x-6">
-                <ul class="flex space-x-8 text-[#5A4FCF]">
-                    <li><a href="#" class="hover:text-gray-900">Product</a></li>
-                    <li><a href="#" class="hover:text-gray-900">About</a></li>
-                    <li><a href="#" class="hover:text-gray-900">Features</a></li>
-                    <li><a href="#" class="hover:text-gray-900">Blog</a></li>
+                <ul class="flex space-x-8 text-[#5A4FCF] z-10">
+                    <li><a href="#product" class="hover:text-gray-900">Product</a></li>
+                    <li><a href="#about" class="hover:text-gray-900">About</a></li>
+                    <li><a href="#features" class="hover:text-gray-900">Features</a></li>
+                    <li><a href="#blog" class="hover:text-gray-900">Blog</a></li>
                 </ul>
             </nav>
 
             <!-- Desktop Support and Sign-in Links -->
-            <div class="hidden md:flex md:space-x-4 font-semibold">
+            <div class="hidden md:flex md:space-x-4 font-semibold z-10">
                 <a href="#" class="text-[#5A4FCF] hover:text-gray-900">Support</a>
                 <a href="#" class="text-[#5A4FCF] hover:text-gray-900">Sign in</a>
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-button" class="md:hidden text-gray-600">
+            <button id="menu-button" class="md:hidden text-gray-600 z-10">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -148,10 +148,10 @@
                 </div>
 
                 <ul class="flex flex-col items-start space-y-4 text-[#5A4FCF] pl-4">
-                    <li><a href="#" class="hover:text-gray-900">Product</a></li>
-                    <li><a href="#" class="hover:text-gray-900">About</a></li>
-                    <li><a href="#" class="hover:text-gray-900">Features</a></li>
-                    <li><a href="#" class="hover:text-gray-900">Blog</a></li>
+                    <li><a href="#product" class="hover:text-gray-900">Product</a></li>
+                    <li><a href="#about" class="hover:text-gray-900">About</a></li>
+                    <li><a href="#features" class="hover:text-gray-900">Features</a></li>
+                    <li><a href="#blog" class="hover:text-gray-900">Blog</a></li>
                     <li><a href="#" class="hover:text-gray-900">Support</a></li>
                     <li><a href="#" class="hover:text-gray-900">Sign in</a></li>
                 </ul>
@@ -183,7 +183,7 @@
                 <img src="image/hero-icon/Union.png"
                     class="z-20 w-10 h-10 lg:w-14 lg:h-14 border rounded-2xl p-3 absolute md:left-[550px] md:top-[700px] lg:left-[680px] lg:top-[350px] xl:left-[800px] xl:top-[350px] ping-grow-shrink" />
             </div>
-            <div>
+            <div class="z-10 space-y-2">
                 <p class="text-[#7868E4] font-semibold text-lg uppercase">Privacy is not a crime</p>
                 <h1 class="text-4xl lg:text-4xl xl:text-6xl font-extrabold">Send Your Message <br> Secretly</h1>
                 <p class="text-lg text-[#5B379E] pb-4">
@@ -191,7 +191,7 @@
                     freedom, and tools enriched <br> with internet privacy-supporting features.
                 </p>
             </div>
-            <div class="flex space-x-4">
+            <div class="flex space-x-4 z-10">
                 <!-- Book Demo Button -->
                 <button class="bg-[#7767e4] text-white py-3 px-3 md:px-6 rounded-lg">Book demo</button>
                 <!-- Start for Free Button with FontAwesome Icon -->
@@ -319,7 +319,7 @@
     </section>
 
 
-    <section class="relative bg-[#140036] min-h-screen">
+    <section class="relative bg-[#140036] min-h-screen" id="features">
         <!-- Background video -->
         <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-1 opacity-10">
             <source src="video/sectionInternetEncrypt.mp4" type="video/mp4">
@@ -388,11 +388,11 @@
                         <img src="image/property/property_13.png" alt="Property 3" class="w-full">
                     </div>
                 </div>
-            
+
 
                 <div class="stepper-section pt-6 pb-10">
                     <div class="flex flex-wrap items-center justify-center md:justify-start space-x-4">
-                      
+
                         <div class="flex flex-col stepper" data-step="1">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -400,7 +400,7 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Resonance rents a phone</span>
                             </div>
                         </div>
-                
+
                         <div class="flex flex-col stepper" data-step="2">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -408,7 +408,7 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Open VPN transfer</span>
                             </div>
                         </div>
-                
+
                         <div class="flex flex-col stepper" data-step="3">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -416,7 +416,7 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Open VPN transfer</span>
                             </div>
                         </div>
-                
+
                         <div class="flex flex-col stepper" data-step="4">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -424,7 +424,7 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Open VPN transfer</span>
                             </div>
                         </div>
-                
+
                         <div class="flex flex-col stepper" data-step="5">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -432,7 +432,7 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Open VPN transfer</span>
                             </div>
                         </div>
-                
+
                         <div class="flex flex-col stepper" data-step="6">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -440,7 +440,7 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Open VPN transfer</span>
                             </div>
                         </div>
-                
+
                         <div class="flex flex-col stepper" data-step="7">
                             <div class="w-full md:w-full h-1 bg-[#BDA2EB] my-2 rounded step-line"></div>
                             <div class="flex items-center">
@@ -448,13 +448,13 @@
                                 <span class="text-[#8B55F7] text-xs step-text">Open VPN transfer</span>
                             </div>
                         </div>
-                    
+
                     </div>
                 </div>
-                
+
             </div>
-            
-            </div>
+
+        </div>
 
         </div>
     </section>
@@ -474,7 +474,7 @@
         </div>
     </section>
 
-    <section class="py-20 bg-product-custom min-h-screen hidden lg:block">
+    <section class="py-20 bg-product-custom min-h-screen hidden lg:block" id="product">
         <div class="max-w-screen-xl mx-auto">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-12 ml-24">
@@ -551,7 +551,7 @@
         </div>
     </section>
 
-    <section class="py-20 px-4">
+    <section class="py-20 px-4" id="about">
         <div class="text-center space-y-7">
             <h1 class="text-xl font-bold">Wanna hack Resonance?</h1>
             <h1 class="text-5xl md:text-8xl lg:text-9xl font-extrabold bg-clip-text text-transparent"
