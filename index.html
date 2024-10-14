@@ -85,8 +85,8 @@
 
 
         .large-img {
-            width: 7rem;
-            height: 7rem;
+            width: 6rem;
+            height: 6rem;
             transform: scale(1.2);
             z-index: 10;
             transition: transform 1s ease;
@@ -488,19 +488,15 @@
         </div>
     </section>
 
-    <section class="py-20 bg-product-custom min-h-screen hidden lg:block" id="product">
-        <div class="max-w-screen-xl mx-auto">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-12 ml-24">
-                    <!-- Pagination and Icons Section -->
+    <section class="py-20 bg-product-custom min-h-screen flex items-center justify-center" id="product">
+        <div class="max-w-screen-xl w-full mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-center">
+                <!-- Pagination and Icons Section -->
+                <div class="flex justify-between items-center space-x-12 lg:flex-grow lg:justify-start">
                     <div class="flex items-center space-x-16">
                         <!-- Vertical Line Pagination -->
-                        <!-- Vertical Line Pagination -->
                         <div class="flex flex-col items-center space-y-3">
-                            <!-- Active Step -->
                             <div class="w-1 h-9 bg-white rounded-full pagination-line"></div>
-
-                            <!-- Inactive Steps -->
                             <div class="w-1 h-8 bg-gray-400 rounded-full pagination-line"></div>
                             <div class="w-1 h-8 bg-gray-400 rounded-full pagination-line"></div>
                             <div class="w-1 h-8 bg-gray-400 rounded-full pagination-line"></div>
@@ -509,10 +505,8 @@
                             <div class="w-1 h-8 bg-gray-400 rounded-full pagination-line"></div>
                         </div>
 
-
                         <!-- Sidebar with Icons -->
                         <div class="flex flex-col space-y-6">
-                            <!-- Icon List -->
                             <img src="image/Neuronus.png" alt="Neuronus" class="small-img h-auto" data-slide-index="0">
                             <img src="image/Password manager.png" alt="Password Manager" class="small-img"
                                 data-slide-index="1">
@@ -525,20 +519,21 @@
                             <img src="image/Neuromail.png" alt="Neuromail" class="small-img" data-slide-index="6">
                         </div>
                     </div>
+                </div>
 
-                    <!-- Main Content Section -->
-                    <div class="text-white pl-20">
-                        <h1 class="text-6xl font-bold" id="main-heading">Neuromail</h1>
-                        <p class="mt-6 max-w-lg leading-relaxed font-normal" id="main-description">
-                            The revolutionary encryption project merging security and user experience.
-                            Users can seamlessly hide files within images, customizing the degree of
-                            deformation for optimal security.
-                        </p>
-                    </div>
+                <!-- Main Content Section -->
+                <div class="text-white text-center lg:pl-20 lg:flex-grow">
+                    <h1 class="text-6xl font-bold" id="main-heading">Neuromail</h1>
+                    <p class="mt-6 max-w-lg leading-relaxed font-normal mx-auto" id="main-description">
+                        The revolutionary encryption project merging security and user experience.
+                        Users can seamlessly hide files within images, customizing the degree of
+                        deformation for optimal security.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Subscibe Email -->
