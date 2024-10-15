@@ -92,53 +92,66 @@
             transition: transform 1s ease;
         }
 
-        .step-line {
-            height: 2px;
-            background-color: #7868E4;
-            /* Inactive stepper line */
-        }
+       /* Default inactive style for step line */
+.step-line {
+  height: 2px;
+  background-color: #7868E4;
+  transition: background-color 0.3s ease;
+}
 
-        .step-circle {
-            width: 12px;
-            height: 12px;
-            border: 2px solid #8B55F7;
-            /* Inactive stepper circle border */
-            border-radius: 50%;
-            background-color: transparent;
-            /* Inactive step background */
-        }
+/* Default inactive style for step circle */
+.step-circle {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8B55F7;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
 
-        .step-text {
-            color: #7868E4;
-            /* Inactive step text color */
-        }
+/* Inactive text color */
+.step-text {
+  color: #7868E4;
+  transition: color 0.3s ease;
+}
 
-        .active-step .step-line {
-            background-color: #8B55F7;
-            /* Active stepper line */
-        }
+/* Active step styles */
+.active-step .step-line {
+  background-color: #8B55F7;
+}
 
-        .active-step .step-circle {
-            background-color: #5B2ED0;
-            /* Active stepper circle background */
-            border: 2px solid #5B2ED0;
-            /* Active stepper circle border */
-        }
+.active-step .step-circle {
+  background-color: #5B2ED0;
+  border: 2px solid #5B2ED0;
+}
 
-        .active-step .step-text {
-            color: #5B2ED0;
-            /* Active step text color */
-        }
+/* Active text color */
+.active-step .step-text {
+  color: #5B2ED0;
+}
 
-        .completed-step .step-circle {
-            background-color: #ffff;
-            /* Completed step circle background */
-        }
+/* Completed step styles */
+.completed-step .step-line {
+  background-color: #5B2ED0;
+}
 
-        .completed-step .step-text {
-            color: #5B2ED0;
-            /* Completed step text color */
-        }
+.completed-step .step-circle {
+  background-color: #5B2ED0;
+  border: none;
+  width: 18px;
+  height: 18px;
+}
+
+/* Add checkmark inside completed circle */
+.completed-step .step-circle::before {
+  content: '✔';
+  color: #fff;
+  font-size: 12px;
+}
+
     </style>
 </head>
 
