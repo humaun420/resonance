@@ -91,6 +91,54 @@
             z-index: 10;
             transition: transform 1s ease;
         }
+
+        .step-line {
+            height: 2px;
+            background-color: #7868E4;
+            /* Inactive stepper line */
+        }
+
+        .step-circle {
+            width: 12px;
+            height: 12px;
+            border: 2px solid #8B55F7;
+            /* Inactive stepper circle border */
+            border-radius: 50%;
+            background-color: transparent;
+            /* Inactive step background */
+        }
+
+        .step-text {
+            color: #7868E4;
+            /* Inactive step text color */
+        }
+
+        .active-step .step-line {
+            background-color: #8B55F7;
+            /* Active stepper line */
+        }
+
+        .active-step .step-circle {
+            background-color: #5B2ED0;
+            /* Active stepper circle background */
+            border: 2px solid #5B2ED0;
+            /* Active stepper circle border */
+        }
+
+        .active-step .step-text {
+            color: #5B2ED0;
+            /* Active step text color */
+        }
+
+        .completed-step .step-circle {
+            background-color: #ffff;
+            /* Completed step circle background */
+        }
+
+        .completed-step .step-text {
+            color: #5B2ED0;
+            /* Completed step text color */
+        }
     </style>
 </head>
 

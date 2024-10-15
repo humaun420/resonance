@@ -137,25 +137,30 @@ function showSlide(index) {
 }
 
 function updateSteppers(index) {
-  // Determine which step is active based on the current slide index
-  const activeStep = Math.floor(index / 2) + 1; // Assuming each step corresponds to 2 images
+    // Determine the active step based on the current slide index
+    const activeStep = Math.floor(index / 2) + 1;
+  
+    steppers.forEach((stepper) => {
+      const stepNumber = parseInt(stepper.getAttribute("data-step"));
+      
+      // Add active class to the current step
+      if (stepNumber === activeStep) {
+        stepper.classList.add("active-step");
+        stepper.classList.remove("completed-step");
+      } 
+      // Add completed class to previous steps
+      else if (stepNumber < activeStep) {
+        stepper.classList.remove("active-step");
+        stepper.classList.add("completed-step");
+      } 
+      // Remove both active and completed classes for upcoming steps
+      else {
+        stepper.classList.remove("active-step", "completed-step");
+      }
+    });
+  }
+  
 
-  steppers.forEach((stepper) => {
-    if (parseInt(stepper.getAttribute("data-step")) === activeStep) {
-      stepper.querySelector(".step-line").classList.add("bg-[#8B55F7]"); // Active line color
-      stepper
-        .querySelector(".step-circle")
-        .classList.add("border-[4px]", "border-[#5B2ED0]"); // Active circle color
-      stepper.querySelector(".step-text").classList.add("text-[#5B2ED0]"); // Active text color
-    } else {
-      stepper.querySelector(".step-line").classList.remove("bg-[#8B55F7]");
-      stepper
-        .querySelector(".step-circle")
-        .classList.remove("border-[4px]", "border-[#5B2ED0]");
-      stepper.querySelector(".step-text").classList.remove("text-[#5B2ED0]");
-    }
-  });
-}
 
 // Show the first slide initially
 showSlide(currentIndex);
