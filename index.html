@@ -152,6 +152,40 @@
             color: #fff;
             font-size: 10px;
         }
+
+        /* Step line default state */
+        .step-line {
+            height: 2px;
+            background-color: #7868E4;
+            width: 0;
+            /* Start from 0 width */
+            transition: background-color 0.3s ease;
+        }
+
+        /* Animation for growing the line from left to right */
+        @keyframes lineGrow {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+                /* Fully expand the line */
+            }
+        }
+
+        /* Active step line: grows from left to right */
+        .active-step .step-line {
+            background-color: #8B55F7;
+            animation: lineGrow 1s forwards;
+            /* Animate when the step becomes active */
+        }
+
+        /* Completed step line remains fully visible */
+        .completed-step .step-line {
+            width: 100%;
+            background-color: #5B2ED0;
+        }
     </style>
 </head>
 
