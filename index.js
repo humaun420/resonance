@@ -145,13 +145,13 @@ function updateSteppers(index) {
       stepper.querySelector(".step-line").classList.add("bg-[#8B55F7]"); // Active line color
       stepper
         .querySelector(".step-circle")
-        .classList.add("border-[5px]", "border-[#5B2ED0]"); // Active circle color
+        .classList.add("border-[4px]", "border-[#5B2ED0]"); // Active circle color
       stepper.querySelector(".step-text").classList.add("text-[#5B2ED0]"); // Active text color
     } else {
       stepper.querySelector(".step-line").classList.remove("bg-[#8B55F7]");
       stepper
         .querySelector(".step-circle")
-        .classList.remove("border-[5px]", "border-[#5B2ED0]");
+        .classList.remove("border-[4px]", "border-[#5B2ED0]");
       stepper.querySelector(".step-text").classList.remove("text-[#5B2ED0]");
     }
   });
