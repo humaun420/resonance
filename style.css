@@ -176,6 +176,10 @@ html {
     margin-top: 630px;
     margin-left: 10px;
   }
+  .custom-secret {
+    margin-top: 770px;
+    margin-left: 170px;
+  }
 }
 
 /* Media query for screens 375px and larger */
@@ -191,6 +195,10 @@ html {
   .custom-security {
     margin-top: 600px;
     margin-left: 10px;
+  }
+  .custom-secret {
+    margin-top: 765px;
+    margin-left: 200px;
   }
 }
 
@@ -208,6 +216,10 @@ html {
     margin-top: 500px;
     margin-left: 50px;
   }
+  .custom-secret {
+    margin-top: 710px;
+    margin-left: 230px;
+  }
 }
 
 /* Example for larger screen sizes */
@@ -224,6 +236,10 @@ html {
     margin-top: 500px;
     margin-left: 140px;
   }
+  .custom-secret {
+    margin-top: 700px;
+    margin-left: 400px;
+  }
 }
 @media (min-width: 1024px) {
   .custom-union {
@@ -238,6 +254,10 @@ html {
     margin-top: 400px;
     margin-left: 540px;
   }
+  .custom-secret {
+    margin-top: 450px;
+    margin-left: 400px;
+  }
 }
 @media (min-width: 1440px) {
   .custom-union {
@@ -251,5 +271,9 @@ html {
   .custom-security {
     margin-top: 450px;
     margin-left: 730px;
+  }
+  .custom-secret {
+    margin-top: 450px;
+    margin-left: 600px;
   }
 }
