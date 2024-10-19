@@ -192,6 +192,10 @@ html {
     margin-top: 850px;
     margin-left: 230px;
   }
+  .custom-group137 {
+    margin-top: 590px;
+    margin-left: 100px;
+  }
 }
 
 /* Media query for screens 375px and larger */
@@ -223,6 +227,10 @@ html {
   .custom-logo {
     margin-top: 850px;
     margin-left: 290px;
+  }
+  .custom-group137 {
+    margin-top: 560px;
+    margin-left: 130px;
   }
 }
 
@@ -256,6 +264,10 @@ html {
     margin-top: 750px;
     margin-left: 330px;
   }
+  .custom-group137 {
+    margin-top: 490px;
+    margin-left: 150px;
+  }
 }
 
 /* Example for larger screen sizes */
@@ -288,6 +300,10 @@ html {
     margin-top: 750px;
     margin-left: 560px;
   }
+  .custom-group137 {
+    margin-top: 470px;
+    margin-left: 320px;
+  }
 }
 @media (min-width: 1024px) {
   .custom-union {
@@ -318,6 +334,10 @@ html {
     margin-top: 320px;
     margin-left: 200px;
   }
+  .custom-group137 {
+    margin-top: 440px;
+    margin-left: 150px;
+  }
 }
 @media (min-width: 1440px) {
   .custom-union {
@@ -347,5 +367,9 @@ html {
   .custom-logo {
     margin-top: 350px;
     margin-left: 380px;
+  }
+  .custom-group137 {
+    margin-top: 440px;
+    margin-left: 280px;
   }
 }
