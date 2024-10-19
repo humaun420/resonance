@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom font for the entire page */
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* Full-section background image with cover and no repeat */
+.bg-cover-custom {
+  background-image: url("image/header-cover.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.bg-product-custom {
+  background-image: url("image/our-products.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-internet-custom {
+  background-image: url("image/internet.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.7);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5);
+
+    opacity: 1;
+  }
+}
+
+.ping-grow-shrink {
+  animation: grow-shrink 5s ease-in-out infinite;
+}
+
+.small-img {
+  width: 5rem;
+  height: 5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.large-img {
+  width: 6rem;
+  height: 6rem;
+  transform: scale(1.2);
+  z-index: 10;
+  transition: transform 1s ease;
+}
+
+/* Default inactive style for step line */
+.step-line {
+  height: 2px;
+  background-color: #7868e4;
+  transition: background-color 0.3s ease;
+}
+
+/* Default inactive style for step circle */
+.step-circle {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #8b55f7;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Inactive text color */
+.step-text {
+  color: #7868e4;
+  transition: color 0.3s ease;
+}
+
+/* Active step styles */
+.active-step .step-line {
+  background-color: #8b55f7;
+}
+
+.active-step .step-circle {
+  background-color: #5b2ed0;
+  border: 2px solid #5b2ed0;
+}
+
+/* Active text color */
+.active-step .step-text {
+  color: #5b2ed0;
+}
+
+/* Completed step styles */
+.completed-step .step-line {
+  background-color: #5b2ed0;
+}
+
+.completed-step .step-circle {
+  background-color: #50c878;
+  opacity: 80%;
+  border: none;
+  width: 14px;
+  height: 14px;
+}
+
+/* Add checkmark inside completed circle */
+.completed-step .step-circle::before {
+  content: "✔";
+  color: #fff;
+  font-size: 10px;
+}
+
+/* Step line default state */
+.step-line {
+  height: 2px;
+  background-color: #7868e4;
+  width: 0;
+  /* Start from 0 width */
+  transition: background-color 0.3s ease;
+}
+
+/* Animation for growing the line from left to right */
+@keyframes lineGrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+    /* Fully expand the line */
+  }
+}
+
+/* Active step line: grows from left to right */
+.active-step .step-line {
+  background-color: #8b55f7;
+  animation: lineGrow 1s forwards;
+  /* Animate when the step becomes active */
+}
+
+/* Completed step line remains fully visible */
+.completed-step .step-line {
+  width: 100%;
+  background-color: #5b2ed0;
+}
