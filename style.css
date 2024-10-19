@@ -180,6 +180,10 @@ html {
     margin-top: 770px;
     margin-left: 170px;
   }
+  .custom-group {
+    margin-top: 930px;
+    margin-left: 180px;
+  }
 }
 
 /* Media query for screens 375px and larger */
@@ -200,6 +204,10 @@ html {
     margin-top: 765px;
     margin-left: 200px;
   }
+  .custom-group {
+    margin-top: 930px;
+    margin-left: 220px;
+  }
 }
 
 /* Media query for screens 425px and larger */
@@ -218,6 +226,10 @@ html {
   }
   .custom-secret {
     margin-top: 710px;
+    margin-left: 230px;
+  }
+  .custom-group {
+    margin-top: 860px;
     margin-left: 230px;
   }
 }
@@ -240,6 +252,10 @@ html {
     margin-top: 700px;
     margin-left: 400px;
   }
+  .custom-group {
+    margin-top: 880px;
+    margin-left: 430px;
+  }
 }
 @media (min-width: 1024px) {
   .custom-union {
@@ -258,6 +274,10 @@ html {
     margin-top: 450px;
     margin-left: 400px;
   }
+  .custom-group {
+    margin-top: 380px;
+    margin-left: 300px;
+  }
 }
 @media (min-width: 1440px) {
   .custom-union {
@@ -275,5 +295,9 @@ html {
   .custom-secret {
     margin-top: 450px;
     margin-left: 600px;
+  }
+  .custom-group {
+    margin-top: 400px;
+    margin-left: 500px;
   }
 }
