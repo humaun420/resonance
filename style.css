@@ -169,7 +169,7 @@ html {
     margin-left: 50px;
   }
   .custom-vpn {
-    margin-top: 600px;
+    margin-top: 650px;
     margin-left: 235px;
   }
   .custom-security {
@@ -182,7 +182,7 @@ html {
   }
   .custom-group {
     margin-top: 930px;
-    margin-left: 180px;
+    margin-left: 120px;
   }
   .custom-kleopatra {
     margin-top: 480px;
@@ -199,6 +199,10 @@ html {
   .custom-subtract {
     margin-top: 800px;
     margin-left: 5px;
+  }
+  .custom-tor {
+    margin-top: 540px;
+    margin-left: 230px;
   }
 }
 
@@ -222,7 +226,7 @@ html {
   }
   .custom-group {
     margin-top: 930px;
-    margin-left: 220px;
+    margin-left: 150px;
   }
   .custom-kleopatra {
     margin-top: 450px;
@@ -239,6 +243,10 @@ html {
   .custom-subtract {
     margin-top: 800px;
     margin-left: 20px;
+  }
+  .custom-tor {
+    margin-top: 500px;
+    margin-left: 280px;
   }
 }
 
@@ -262,7 +270,7 @@ html {
   }
   .custom-group {
     margin-top: 860px;
-    margin-left: 230px;
+    margin-left: 175px;
   }
   .custom-kleopatra {
     margin-top: 380px;
@@ -279,6 +287,10 @@ html {
   .custom-subtract {
     margin-top: 750px;
     margin-left: 50px;
+  }
+  .custom-tor {
+    margin-top: 440px;
+    margin-left: 310px;
   }
 }
 
@@ -302,7 +314,7 @@ html {
   }
   .custom-group {
     margin-top: 880px;
-    margin-left: 430px;
+    margin-left: 340px;
   }
   .custom-kleopatra {
     margin-top: 335px;
@@ -319,6 +331,10 @@ html {
   .custom-subtract {
     margin-top: 750px;
     margin-left: 200px;
+  }
+  .custom-tor {
+    margin-top: 410px;
+    margin-left: 510px;
   }
 }
 @media (min-width: 1024px) {
@@ -358,6 +374,10 @@ html {
     margin-top: 200px;
     margin-left: 100px;
   }
+  .custom-tor {
+    margin-top: 70px;
+    margin-left: 120px;
+  }
 }
 @media (min-width: 1440px) {
   .custom-union {
@@ -396,5 +416,9 @@ html {
   .custom-subtract {
     margin-top: 270px;
     margin-left: 250px;
+  }
+  .custom-tor {
+    margin-top: 120px;
+    margin-left: 160px;
   }
 }
