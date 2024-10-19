@@ -172,6 +172,10 @@ html {
     margin-top: 600px;
     margin-left: 235px;
   }
+  .custom-security {
+    margin-top: 630px;
+    margin-left: 10px;
+  }
 }
 
 /* Media query for screens 375px and larger */
@@ -183,6 +187,10 @@ html {
   .custom-vpn {
     margin-top: 600px;
     margin-left: 290px;
+  }
+  .custom-security {
+    margin-top: 600px;
+    margin-left: 10px;
   }
 }
 
@@ -196,6 +204,10 @@ html {
     margin-top: 600px;
     margin-left: 325px;
   }
+  .custom-security {
+    margin-top: 500px;
+    margin-left: 50px;
+  }
 }
 
 /* Example for larger screen sizes */
@@ -208,6 +220,10 @@ html {
     margin-top: 600px;
     margin-left: 600px;
   }
+  .custom-security {
+    margin-top: 500px;
+    margin-left: 140px;
+  }
 }
 @media (min-width: 1024px) {
   .custom-union {
@@ -218,6 +234,10 @@ html {
     margin-top: 480px;
     margin-left: 570px;
   }
+  .custom-security {
+    margin-top: 400px;
+    margin-left: 540px;
+  }
 }
 @media (min-width: 1440px) {
   .custom-union {
@@ -227,5 +247,9 @@ html {
   .custom-vpn {
     margin-top: 530px;
     margin-left: 750px;
+  }
+  .custom-security {
+    margin-top: 450px;
+    margin-left: 730px;
   }
 }
