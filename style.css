@@ -161,3 +161,47 @@ html {
   width: 100%;
   background-color: #5b2ed0;
 }
+
+/* Media query for screens 320px and larger */
+@media (max-width: 320px) {
+  .custom-margin {
+    margin-top: 500px;
+    margin-left: 200px;
+  }
+}
+
+/* Media query for screens 375px and larger */
+@media (min-width: 375px) {
+  .custom-margin {
+    margin-top: 450px;
+    margin-left: 200px;
+  }
+}
+
+/* Media query for screens 425px and larger */
+@media (min-width: 425px) {
+  .custom-margin {
+    margin-top: 380px;
+    margin-left: 200px;
+  }
+}
+
+/* Example for larger screen sizes */
+@media (min-width: 768px) {
+  .custom-margin {
+    margin-top: 380px;
+    margin-left: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .custom-margin {
+    margin-top: 380px;
+    margin-left: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .custom-margin {
+    margin-top: 880px;
+    margin-left: 200px;
+  }
+}
