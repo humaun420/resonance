@@ -164,44 +164,68 @@ html {
 
 /* Media query for screens 320px and larger */
 @media (max-width: 320px) {
-  .custom-margin {
-    margin-top: 500px;
-    margin-left: 200px;
+  .custom-union {
+    margin-top: 530px;
+    margin-left: 50px;
+  }
+  .custom-vpn {
+    margin-top: 600px;
+    margin-left: 235px;
   }
 }
 
 /* Media query for screens 375px and larger */
 @media (min-width: 375px) {
-  .custom-margin {
-    margin-top: 450px;
-    margin-left: 200px;
+  .custom-union {
+    margin-top: 500px;
+    margin-left: 50px;
+  }
+  .custom-vpn {
+    margin-top: 600px;
+    margin-left: 290px;
   }
 }
 
 /* Media query for screens 425px and larger */
 @media (min-width: 425px) {
-  .custom-margin {
-    margin-top: 380px;
-    margin-left: 200px;
+  .custom-union {
+    margin-top: 420px;
+    margin-left: 100px;
+  }
+  .custom-vpn {
+    margin-top: 600px;
+    margin-left: 325px;
   }
 }
 
 /* Example for larger screen sizes */
 @media (min-width: 768px) {
-  .custom-margin {
-    margin-top: 380px;
+  .custom-union {
+    margin-top: 400px;
     margin-left: 200px;
+  }
+  .custom-vpn {
+    margin-top: 600px;
+    margin-left: 600px;
   }
 }
 @media (min-width: 1024px) {
-  .custom-margin {
+  .custom-union {
     margin-top: 380px;
-    margin-left: 200px;
+    margin-left: 670px;
+  }
+  .custom-vpn {
+    margin-top: 480px;
+    margin-left: 570px;
   }
 }
 @media (min-width: 1440px) {
-  .custom-margin {
-    margin-top: 880px;
-    margin-left: 200px;
+  .custom-union {
+    margin-top: 380px;
+    margin-left: 850px;
+  }
+  .custom-vpn {
+    margin-top: 530px;
+    margin-left: 750px;
   }
 }
