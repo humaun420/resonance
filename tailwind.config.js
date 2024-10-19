@@ -6,6 +6,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+        screens: {
+            tiny: '320px',
+            compact: '375px',
+            standard: '425px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          },
       fontFamily: {
         primary: ["var(--font-primary)"],
       },
