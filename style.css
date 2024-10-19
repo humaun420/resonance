@@ -188,6 +188,10 @@ html {
     margin-top: 480px;
     margin-left: 140px;
   }
+  .custom-logo {
+    margin-top: 850px;
+    margin-left: 230px;
+  }
 }
 
 /* Media query for screens 375px and larger */
@@ -215,6 +219,10 @@ html {
   .custom-kleopatra {
     margin-top: 450px;
     margin-left: 140px;
+  }
+  .custom-logo {
+    margin-top: 850px;
+    margin-left: 290px;
   }
 }
 
@@ -244,6 +252,10 @@ html {
     margin-top: 380px;
     margin-left: 180px;
   }
+  .custom-logo {
+    margin-top: 750px;
+    margin-left: 330px;
+  }
 }
 
 /* Example for larger screen sizes */
@@ -272,6 +284,10 @@ html {
     margin-top: 335px;
     margin-left: 280px;
   }
+  .custom-logo {
+    margin-top: 750px;
+    margin-left: 560px;
+  }
 }
 @media (min-width: 1024px) {
   .custom-union {
@@ -298,6 +314,10 @@ html {
     margin-top: 500px;
     margin-left: 270px;
   }
+  .custom-logo {
+    margin-top: 320px;
+    margin-left: 200px;
+  }
 }
 @media (min-width: 1440px) {
   .custom-union {
@@ -323,5 +343,9 @@ html {
   .custom-kleopatra {
     margin-top: 500px;
     margin-left: 420px;
+  }
+  .custom-logo {
+    margin-top: 350px;
+    margin-left: 380px;
   }
 }
