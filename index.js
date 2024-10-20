@@ -86,20 +86,30 @@ images.forEach((image) => {
     headingElement.textContent = slide.title;
     descriptionElement.textContent = slide.description;
 
-    paginationLines.forEach((line) => line.classList.remove("bg-white"));
-    paginationLines[index].classList.add("bg-white");
+    // Set all pagination lines to bg-gray-400 first
+    paginationLines.forEach((line) => {
+      line.classList.remove("bg-white");
+      line.classList.add("bg-gray-400");
+    });
 
+    // Add 'bg-white' to the clicked image's pagination line
+    paginationLines[index].classList.add("bg-white");
+    paginationLines[index].classList.remove("bg-gray-400");
+
+    // Remove 'large-img' class from all images
     images.forEach((img) => img.classList.remove("large-img"));
+
+    // Add 'large-img' class to the clicked image
     this.classList.add("large-img");
   });
 });
 
 window.addEventListener("load", function () {
   const firstImage = images[0];
-  firstImage.click();
-
-  paginationLines[0].classList.add("bg-white");
+  firstImage.click(); // Simulate click on first image
 });
+
+
 
 // internt slide
 const slider = document.querySelector(".slider");
