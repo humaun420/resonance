@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
             //Spread all parts of server 1
             .to('#server_1 .server_segment_1', {
                 y: 339,
-                scale: 1.2,
+                scale: 2.5,
                 duration: 1,
             })
             .to('#server_1 .server_segment_2', {
@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             //Reposition all parts of server 1
             .to('#server_1 .server_segment_1', {
-                y: 378,
+                y: 367,
                 scale: 1,
                 duration: 1,
             }, '<')
@@ -136,7 +136,7 @@ window.addEventListener('DOMContentLoaded', () => {
             //Spread all parts of server 2
             .to('#server_2 .server_segment_1', {
                 y: 335,
-                scale: 1.5,
+                scale: 2.5,
                 duration: 1,
             })
             .to('#server_2 .server_segment_2', {
@@ -200,7 +200,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             // Reposition all parts of server 2
             .to('#server_2 .server_segment_1', {
-                y: 378,
+                y: 367,
                 scale: 1,
                 duration: 1,
             }, '<')
@@ -283,7 +283,7 @@ window.addEventListener('DOMContentLoaded', () => {
             //Spread all parts of server 3
             .to('#server_3 .server_segment_1', {
                 y: 339,
-                scale: 1.2,
+                scale: 2.5,
                 duration: 1,
             })
             .to('#server_3 .server_segment_2', {
@@ -328,7 +328,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             //Reposition all parts of server 3
             .to('#server_3 .server_segment_1', {
-                y: 378,
+                y: 367,
                 scale: 1,
                 duration: 1,
             }, '<')
@@ -374,7 +374,7 @@ window.addEventListener('DOMContentLoaded', () => {
             // spread all parts of server 4
             .to('#server_4 .server_segment_1', {
                 y: 335,
-                scale: 1.5,
+                scale: 2.5,
                 duration: 1,
             })
             .to('#server_4 .server_segment_2', {
@@ -413,7 +413,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             // Reposition all parts of server 4
             .to('#server_4 .server_segment_1', {
-                y: 378,
+                y: 367,
                 scale: 1,
                 duration: 1,
             })
@@ -519,7 +519,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 duration: 1,
             }, '<')
             .to('#Resonance_Logo', {
-                width: 'auto',
+                width: '43',
                 duration: 1,
             }, '<')
             .to('#incoming_message_container', {

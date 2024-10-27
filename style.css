@@ -16,7 +16,7 @@ html {
 }
 
 .bg-product-custom {
-  background-image: url("image/our-products.jpg");
+  /*background-image: url("image/our-products.jpg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
