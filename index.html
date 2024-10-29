@@ -290,35 +290,39 @@
     </section>
 
     <section class="bg-[#140036]" id="features">
+
         <div class="container px-4 mx-auto relative h-full flex flex-col overflow-hidden">
             <!-- BG Layer -->
             <div class="w-full h-full absolute left-0 top-0 pointer-events-none hidden lg:block" id="bg-layer">
 
                 <div class="absolute w-full h-full max-w-[1130px] max-h-[635px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-85  video_overlay"
                     id="video-motion">
-                    <video autoplay class="absolute top-0 left-0 w-full h-full opacity-35" loop muted playsinline>
+
+                    <video autoplay class="absolute top-0 mix-blend-soft-light left-0 w-full h-full opacity-35" loop muted playsinline>
                         <source src="video/sectionInternetEncrypt.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 
                     <!-- Radial gradient overlay -->
-                    <div
-                        class="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle,_rgba(0,0,0,0)_0%,_rgba(20,0,54,1)_85%)]">
+                    <div class="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle,_rgba(0,0,0,0)_0%,_rgba(20,0,54,1)_85%)]">
                     </div>
+<!--                    <div class="inset-0 bg-[#A277F3]/20 opacity-50  w-full h-full"></div>-->
 
                     <!-- Linear gradient for top and bottom fade shadow -->
-                    <div
-                        class="absolute top-0 left-0 w-full h-full pointer-events-none bg-[linear-gradient(180deg,_rgba(20,0,54,1)_0%,_rgba(20,0,54,0)_15%,_rgba(20,0,54,0)_85%,_rgba(20,0,54,1)_100%)]">
+                    <div class="absolute top-0 left-0 w-full h-full pointer-events-none bg-[linear-gradient(180deg,_rgba(20,0,54,1)_0%,_rgba(20,0,54,0)_15%,_rgba(20,0,54,0)_85%,_rgba(20,0,54,1)_100%)]">
                     </div>
+
+<!--                    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(43.27%_43.27%_at_50%_56.73%,rgba(255,255,255,0.3)0%,rgba(255,255,255,0.15)74.14%,rgba(255,255,255,0)100%)]"></div>-->
                 </div>
-                <div id="cloud">
-                    <img alt=""
-                        class="glowing-image max-h-[315px] max-w-[570px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10"
-                        src="image/Cloud.png">
+
+                <div id="cloud" class="bg-[url('image/Cloud.png')] bg-cover mix-blend-soft-light max-h-[315px] max-w-[570px] h-full w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 </div>
             </div>
-            <!-- HEADER -->
+            <!-- ./BG Layer -->
+
+            <!-- Content Layer -->
             <div class="relative flex-1 z-10">
+                <!-- HEADER -->
                 <div class="space-y-3 pt-20">
                     <p class="text-[#7868E4] font-semibold text-center md:text-left uppercase text-sm">
                         Chat Safely: Encrypt Every Step
@@ -643,6 +647,7 @@
                     </div>
                 </div>
             </div>
+            <!-- ./Content Layer -->
         </div>
     </section>
 
