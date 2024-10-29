@@ -50,6 +50,17 @@
             margin-right: auto !important;
             /* Center the container */
         }
+
+
+        .video_overlay::after{
+            /*content: '';*/
+            /*position: absolute;*/
+            /*inset: 0;*/
+            /*background:*/
+            /*        #A277F3;*/
+            /*mix-blend-mode: color;*/
+            /*opacity: 0.3;*/
+        }
     </style>
 
 </head>
@@ -280,9 +291,10 @@
 
     <section class="bg-[#140036]" id="features">
         <div class="container px-4 mx-auto relative h-full flex flex-col overflow-hidden">
+            <!-- BG Layer -->
             <div class="w-full h-full absolute left-0 top-0 pointer-events-none hidden lg:block" id="bg-layer">
 
-                <div class="absolute w-full h-full max-w-[1130px] max-h-[635px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-85"
+                <div class="absolute w-full h-full max-w-[1130px] max-h-[635px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-85  video_overlay"
                     id="video-motion">
                     <video autoplay class="absolute top-0 left-0 w-full h-full opacity-35" loop muted playsinline>
                         <source src="video/sectionInternetEncrypt.mp4" type="video/mp4">

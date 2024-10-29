@@ -668,7 +668,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 x: -590,
             })
             .to('#SERVER_PROCESS', {
-                delay: 3,
+                delay: 6,
                 duration: 1,
                 x: -910,
             })
@@ -681,6 +681,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
         return timeLine;
     }
+
+    // initialize all animations to begin the animations
+    const serverProcessing = serverProcessingAnimation();
+    const stepsProgress = stepsProgressAnimation();
+    const moveContainerOn1250To992 = moveContainerOn1250To992Animation();
+    const moveContainerOn992To768 = moveContainerOn992To768Animation();
+    const moveContainerOn768ToRest = moveContainerOn768ToRestAnimation();
+
+    // Media queries
+    const media992To1250 = window.matchMedia('(min-width: 992px) and (max-width: 1250px)')
+    const media768To992 = window.matchMedia('(min-width: 768px) and (max-width: 992px)')
+    const media768ToRest = window.matchMedia('(max-width: 768px)')
 
     // check screen size for 1250 to 992
     function checkMediaFor992To1250() {
@@ -714,18 +726,6 @@ window.addEventListener('DOMContentLoaded', () => {
             masterTimeLine.restart(true, false);
         }
     }
-
-    // initialize all animations to begin the animations
-    const serverProcessing = serverProcessingAnimation();
-    const stepsProgress = stepsProgressAnimation();
-    const moveContainerOn1250To992 = moveContainerOn1250To992Animation();
-    const moveContainerOn992To768 = moveContainerOn992To768Animation();
-    const moveContainerOn768ToRest = moveContainerOn768ToRestAnimation();
-
-    // Media queries
-    const media992To1250 = window.matchMedia('(min-width: 992px) and (max-width: 1250px)')
-    const media768To992 = window.matchMedia('(min-width: 768px) and (max-width: 992px)')
-    const media768ToRest = window.matchMedia('(max-width: 768px)')
 
     // add all initial animation to the main timeline
     masterTimeLine.add(serverProcessing)
