@@ -298,10 +298,12 @@
                 <div class="absolute w-full h-full max-w-[1130px] max-h-[635px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-85  video_overlay"
                     id="video-motion">
 
-                    <video autoplay class="absolute top-0 mix-blend-soft-light left-0 w-full h-full opacity-35" style="filter: grayscale(100%) brightness(200%)" loop muted playsinline>
+                    <video autoplay class="absolute top-0 mix-blend-soft-light left-0 w-full h-full opacity-35" style="filter: grayscale(70%)" loop muted playsinline>
                         <source src="video/sectionInternetEncrypt.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+
+                    <img src="image/bg_img.png" alt="Overlay Image" class="absolute top-0 left-0 w-full h-full opacity-100" style="object-fit: cover;">
 
                     <!-- Radial gradient overlay -->
                     <div class="absolute top-0 left-0 w-full h-full pointer-events-none bg-[radial-gradient(circle,_rgba(0,0,0,0)_0%,_rgba(20,0,54,1)_85%)]">
@@ -315,7 +317,7 @@
 <!--                    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(43.27%_43.27%_at_50%_56.73%,rgba(255,255,255,0.3)0%,rgba(255,255,255,0.15)74.14%,rgba(255,255,255,0)100%)]"></div>-->
                 </div>
 
-                <div id="cloud" class="bg-[url('image/Cloud.png')] bg-cover mix-blend-soft-light max-h-[315px] max-w-[570px] h-full w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80">
+                <div id="cloud" class="bg-[url('image/Cloud.png')] bg-cover mix-blend-overlay max-h-[315px] max-w-[570px] h-full w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60">
                 </div>
             </div>
             <!-- ./BG Layer -->
