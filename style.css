@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'Neue Plak';
-  src: url('fonts/neue-plak/Neue Plak Regular.ttf') format('truetype');
+  src: url('fonts/neue-plak/neue_plak_extended_regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Neue Plak';
-  src: url('fonts/neue-plak/Neue Plak Text Bold.ttf') format('truetype');
+  src: url('fonts/neue-plak/neue_plak_extended_bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -109,6 +109,12 @@ html {
       transform: scale(1.5);
       opacity: 1;
     }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .-mt-esm-32vh{
+    margin-top: -32vh !important;
   }
 }
 
