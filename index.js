@@ -74,9 +74,9 @@ const slideData = [
     bg_text_color: '#BDA2EB'
   },
   {
-    title: "Neuromail",
+    title: "GhostMail",
     description:
-      "The email system that protects your communication with quantum encryption.",
+      "The revolutionary encryption project merging security and user experience. Users can seamlessly hide files within images, customizing the degree of deformation for optimal security.",
     bg_text_color: '#712EE3'
   },
 ];
