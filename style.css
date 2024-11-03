@@ -121,8 +121,8 @@ html {
 /* Media query for screens 320px and larger */
 @media (max-width: 320px) {
   .custom-union {
-    margin-top: 530px;
-    margin-left: 50px;
+    margin-top: 580px;
+    margin-left: 60px;
   }
   .custom-vpn {
     margin-top: 650px;
@@ -208,7 +208,7 @@ html {
 /* Media query for screens 425px and larger */
 @media (min-width: 425px) {
   .custom-union {
-    margin-top: 420px;
+    margin-top: 620px;
     margin-left: 100px;
   }
   .custom-vpn {
@@ -216,7 +216,7 @@ html {
     margin-left: 325px;
   }
   .custom-security {
-    margin-top: 500px;
+    margin-top: 510px;
     margin-left: 50px;
   }
   .custom-secret {
@@ -228,8 +228,8 @@ html {
     margin-left: 175px;
   }
   .custom-kleopatra {
-    margin-top: 380px;
-    margin-left: 180px;
+    margin-top: 500px;
+    margin-left: 220px;
   }
   .custom-logo {
     margin-top: 750px;
@@ -244,7 +244,7 @@ html {
     margin-left: 50px;
   }
   .custom-tor {
-    margin-top: 440px;
+    margin-top: 540px;
     margin-left: 310px;
   }
 }
