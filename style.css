@@ -294,16 +294,16 @@ html {
 }
 @media (min-width: 1024px) {
   .custom-union {
-    margin-top: 380px;
-    margin-left: 670px;
+    margin-top: 520px;
+    margin-left: 800px;
   }
   .custom-vpn {
-    margin-top: 480px;
-    margin-left: 570px;
+    margin-top: 530px;
+    margin-left: 590px;
   }
   .custom-security {
-    margin-top: 400px;
-    margin-left: 540px;
+    margin-top: 450px;
+    margin-left: 580px;
   }
   .custom-secret {
     margin-top: 450px;
@@ -336,16 +336,16 @@ html {
 }
 @media (min-width: 1440px) {
   .custom-union {
-    margin-top: 380px;
-    margin-left: 850px;
+    margin-top: 450px;
+    margin-left: 900px;
   }
   .custom-vpn {
-    margin-top: 530px;
-    margin-left: 750px;
+    margin-top: 560px;
+    margin-left: 770px;
   }
   .custom-security {
-    margin-top: 450px;
-    margin-left: 730px;
+    margin-top: 480px;
+    margin-left: 760px;
   }
   .custom-secret {
     margin-top: 450px;
