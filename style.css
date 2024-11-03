@@ -1,16 +1,31 @@
+@font-face {
+  font-family: 'Neue Plak';
+  src: url('fonts/neue-plak/Neue Plak Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Plak';
+  src: url('fonts/neue-plak/Neue Plak Text Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
 
 /* Custom font for the entire page */
-.font-inter {
-  font-family: "Inter", sans-serif;
+.font-neue-plak {
+  font-family: 'Neue Plak', sans-serif;
 }
 
 /* Full-section background image with cover and no repeat */
 .bg-cover-custom {
   background-image: url("image/header-cover.png");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -67,6 +82,36 @@ html {
   transition: transform 1s ease;
 }
 
+@media screen and (max-width: 640px) {
+  .small-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .large-img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+  @keyframes grow-shrink {
+    0% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+
+    50% {
+      transform: scale(3);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1.5);
+      opacity: 1;
+    }
+  }
+}
+
 /* Media query for screens 320px and larger */
 @media (max-width: 320px) {
   .custom-union {
@@ -115,11 +160,10 @@ html {
 @media (min-width: 375px) {
   .custom-union {
     margin-top: 500px;
-    margin-left: 50px;
   }
   .custom-vpn {
     margin-top: 600px;
-    margin-left: 290px;
+    margin-left: 280px;
   }
   .custom-security {
     margin-top: 600px;
