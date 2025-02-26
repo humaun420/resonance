@@ -43,7 +43,7 @@ const pushChildToParent = (c, p) => {
 
 const makeLeftSectionAndRender = (selector, parent) => {
     const card = document.createElement('div');
-    card.classList.add('px-4', 'py-6', 'rounded-xl', 'duration-300');
+    card.classList.add('px-4', 'py-6', 'rounded-2xl', 'duration-300', 'cursor-pointer');
 
     card.addEventListener("click", () => {
         selectedPart.selected = selector;
@@ -51,11 +51,11 @@ const makeLeftSectionAndRender = (selector, parent) => {
     });
 
     const h1 = document.createElement('h1');
-    h1.classList.add('capitalize', 'font-black', 'text-2xl', 'pb-4');
+    h1.classList.add('capitalize', 'font-black', 'text-3xl', 'pb-4');
     h1.textContent = selector;
 
     const p = document.createElement('p');
-    p.classList.add('text-[#5B379E]', 'text-base');
+    p.classList.add('text-[#5B379E]', 'text-lg');
     p.textContent = data[selector].text;
 
     pushChildToParent(h1, card);
@@ -71,7 +71,7 @@ function Section2DomLoaded() {
     const subSections = Object.keys(data);
 
     const div100 = document.createElement('div');
-    div100.classList.add('h-full', 'rounded-3xl', 'relative', 'overflow-hidden');
+    div100.classList.add('w-full', 'rounded-3xl', 'relative', 'overflow-hidden', 'aspect-square', 'my-auto');
 
     const div300 = document.createElement('div');
     div300.classList.add('h-[300%]', 'w-full', 'rounded-2xl', 'absolute', 'flex', 'flex-col', 'top-[0%]', 'left-[0%]');
@@ -83,7 +83,7 @@ function Section2DomLoaded() {
         makeLeftSectionAndRender(sub, leftSide);
 
         const img = document.createElement('img');
-        img.classList.add('w-full', 'h-full');
+        img.classList.add('w-full', 'h-full', 'object-cover');
         img.src = data[sub].bg;
         img.dataset.index = index; // Add index for tracking
 
@@ -105,7 +105,7 @@ function updateSelection() {
 
     // Reset all card background colors
     leftSideCards.forEach(card => {
-        card.classList.remove('bg-[#6860FE1A]');
+        card.classList.remove('selectedCard');
     });
 
     // Apply the selected class to the correct card
@@ -114,7 +114,7 @@ function updateSelection() {
     });
 
     if (selectedCard) {
-        selectedCard.classList.add('bg-[#6860FE1A]');
+        selectedCard.classList.add('selectedCard');
     }
 
     // Move the right-side slider
