@@ -34,11 +34,9 @@ const bottomPartData = {
     image1: "",
     image2: ""
 };
-
 const selectedPart = {
     selected: "messenger"
 };
-
 const pushChildToParent = (c, p) => {
     p.append(c);
 };
