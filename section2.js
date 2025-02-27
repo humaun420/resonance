@@ -5,9 +5,7 @@ const data = {
         text: "All files are end-to-end encrypted - even the administrator has no access. Store your most sensitive information with confidence.",
         bg: "image/sec2Images/messengerbg.png",
         images: {
-            path: "",
-            position: "",
-            positionValue: ""
+            path: ""
         }
     },
     finance: {
@@ -15,8 +13,7 @@ const data = {
         bg: "image/sec2Images/financebg.png",
         images: {
             path: "",
-            position: "",
-            positionValue: ""
+            
         }
     },
     tools: {
@@ -24,9 +21,10 @@ const data = {
         bg: "image/sec2Images/toolsbg.png",
         images: {
             path: "image/sec2Images/toolsFront1.png",
-            position: "absolute",
-            positionValue: ""
-        }
+            css: ['absolute', '-bottom-10', 'h-[80%]', 'w-[50%]', '-left-[5%]', 'object-top']
+        },
+        rightHeading: "All in One - Access neuro Tools from Resonance",
+        rightHeadingColor: "#8851F6"
     }
 };
 
@@ -40,6 +38,29 @@ const selectedPart = {
 const pushChildToParent = (c, p) => {
     p.append(c);
 };
+
+const renderAdditionalContent = (data, parent) => {
+    
+    if(data?.images?.path && data.images.path !== ""){
+        const img = document.createElement('img');
+        img.classList.add('object-cover');
+        if (Array.isArray(data.images.css)) {
+            img.classList.add(...data.images.css);
+        }
+        img.style.backdropFilter = "2px 5px 4px black"
+        img.src = data.images.path
+        pushChildToParent(img, parent)
+    }
+
+    if(data?.rightHeading && data.rightHeading !== ""){
+        const p = document.createElement('p');
+        p.textContent = data.rightHeading
+        p.classList.add('absolute', 'top-[10%]', 'lg:text-[min(22px,max(18px,1.5vw))]', 'text-center', 'font-black', `text-[${data.rightHeadingColor}]`, 'w-[55%]', 'left-[50%]', '-translate-x-[50%]');
+        pushChildToParent(p, parent)
+    }
+
+    return null
+}
 
 const makeLeftSectionAndRender = (selector, parent) => {
     const card = document.createElement('div');
@@ -71,26 +92,31 @@ function Section2DomLoaded() {
     const subSections = Object.keys(data);
 
     const div100 = document.createElement('div');
-    div100.classList.add('w-full', 'rounded-3xl', 'relative', 'overflow-hidden', 'aspect-square', 'my-auto');
+    div100.classList.add('w-full', 'relative', 'overflow-hidden', 'aspect-[1.1]', 'my-auto');
 
     const div300 = document.createElement('div');
-    div300.classList.add('h-[300%]', 'w-full', 'rounded-2xl', 'absolute', 'flex', 'flex-col', 'top-[0%]', 'left-[0%]');
+    div300.classList.add('h-[300%]', 'w-full', 'absolute', 'flex', 'flex-col', 'top-[0%]', 'left-[0%]', 'pl-8');
 
-    const rightSubDiv = document.createElement('div');
-    rightSubDiv.classList.add('w-full', '!h-[calc(100%/3)]');
+    let rightSubDiv;
 
     subSections.map((sub, index) => {
         makeLeftSectionAndRender(sub, leftSide);
 
         const img = document.createElement('img');
-        img.classList.add('w-full', 'h-full', 'object-cover');
+        img.classList.add('w-full', 'h-full', 'object-cover', 'rounded-3xl');
         img.src = data[sub].bg;
         img.dataset.index = index; // Add index for tracking
 
+        rightSubDiv = document.createElement('div');
+        rightSubDiv.classList.add('w-full', '!h-[calc(100%/3)]', 'relative');
         pushChildToParent(img, rightSubDiv);
+
+        renderAdditionalContent(data[sub], rightSubDiv)
+
+        pushChildToParent(rightSubDiv, div300);
     });
 
-    pushChildToParent(rightSubDiv, div300);
+    
     pushChildToParent(div300, div100);
     pushChildToParent(div100, rightSide);
 
