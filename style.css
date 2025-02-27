@@ -82,6 +82,42 @@ html {
   transition: transform 1s ease;
 }
 
+
+
+
+
+
+.selectedCard {
+  background: #6860FE1A;
+  position: relative;
+}
+.selectedCard::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.5px;
+  background: #3983FF;
+  height: 85%;
+  transition: 0.3s;
+  border-radius: 5px;
+  z-index: 3;
+}
+.selectedCard::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  background: #000000;
+  height: 25%;
+  transition: 0.3s;
+  border-radius: 5px;
+  z-index: 2;
+}
+
 @media screen and (max-width: 640px) {
   .small-img {
     width: 40px;
